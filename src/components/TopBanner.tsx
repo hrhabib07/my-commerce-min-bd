@@ -23,7 +23,7 @@ const TopBanner = () => {
         }}
         className="flex items-center"
       >
-        <div className="max-w-[50%] m-4">
+        <div className="flex-1 max-w-[50%] m-4">
           <h2 className="text-white text-4xl">
             Welcome to the official website of <br /> commerce ministry of
             bangladesh{" "}
@@ -37,12 +37,12 @@ const TopBanner = () => {
             Explore More{" "}
           </button>
         </div>
-        <div className="flex justify-center items-center">
-          <div className="grid grid-cols-2 border">
-            <div className="text-white uppercase text-center col-span-2">
-              Today's exchange rate
+        <div className="flex-1 w-full flex justify-center items-center">
+          <div className="grid grid-cols-2 rounded p-4  bg-gray-900">
+            <div className="text-white uppercase text-center col-span-2 ">
+              <h2 className="mb-4">Today's exchange rate</h2>
             </div>
-            <div className="text-white flex gap-4 text-center">
+            <div className="text-white flex gap-2 text-center p-4 ">
               <h2>
                 <img
                   src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1f8.svg"
@@ -52,7 +52,7 @@ const TopBanner = () => {
               </h2>
               <h2>116.77৳</h2>
             </div>
-            <div className="text-white flex gap-4 text-center">
+            <div className="text-white flex gap-2 text-center  p-4 ">
               <h2>
                 <img
                   src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1ec-1f1e7.svg"
@@ -63,7 +63,7 @@ const TopBanner = () => {
               <h2>149.97৳</h2>
             </div>
 
-            <div className="text-white flex gap-4 text-center">
+            <div className="text-white flex gap-2 text-center  p-4 ">
               <h2>
                 <img
                   src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1e6-1f1fa.svg"
@@ -73,7 +73,7 @@ const TopBanner = () => {
               </h2>
               <h2>77.41৳</h2>
             </div>
-            <div className="text-white flex gap-4 text-center">
+            <div className="text-white flex gap-2 text-center  p-4 ">
               <h2>
                 <img
                   src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f8-1f1e6.svg"

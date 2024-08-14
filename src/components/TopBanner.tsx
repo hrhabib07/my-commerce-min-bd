@@ -24,23 +24,29 @@ const TopBanner = () => {
         className="flex items-center"
       >
         <div className="flex-1 max-w-[50%] m-4">
-          <h2 className="text-white text-4xl">
-            Welcome to the official website of <br /> commerce ministry of
-            bangladesh{" "}
-          </h2>
-          <h3 className="text-gray-300 text-xl mt-4">
-            Empowering trade, fostering economic growth, and ensuring consumer
-            protection across Bangladesh.
-          </h3>
-          <button className="p-2 bg-green-600 text-white my-4 rounded hover:bg-green-800 ">
-            {" "}
-            Explore More{" "}
-          </button>
+          <div className="flex flex-col justify-center items-center">
+            <div>
+              <h2 className="text-white text-4xl">
+                Welcome to the official website of <br /> commerce ministry of
+                Bangladesh{" "}
+              </h2>
+              <h3 className="text-gray-300 text-xl mt-4">
+                Empowering trade, fostering economic growth, and ensuring
+                consumer protection across Bangladesh.
+              </h3>
+              <button className="p-2 bg-green-600 text-white my-4 rounded hover:bg-green-800 ">
+                {" "}
+                Explore More{" "}
+              </button>
+            </div>
+          </div>
         </div>
         <div className="flex-1 w-full flex justify-center items-center">
           <div className="grid grid-cols-2 rounded p-4  bg-gray-900">
             <div className="text-white uppercase text-center col-span-2 ">
-              <h2 className="mb-4">Today's exchange rate</h2>
+              <h2 className="mb-4 text-lg font-medium">
+                Today's exchange rate
+              </h2>
             </div>
             <div className="text-white flex gap-2 text-center p-4 ">
               <h2>

@@ -3,7 +3,13 @@ const Navbar = () => {
     <>
       <div className="flex justify-between my-4">
         <div>
-          <h2 className="text-xl font-bold">Commerce min BD</h2>
+          <h2 className="text-xl font-bold">
+            <span className="  rounded">
+              <span className=" ml-2 custom-text">
+                Commerce ministry of Bangladesh
+              </span>
+            </span>
+          </h2>
         </div>
         <div>
           <nav>
@@ -12,13 +18,13 @@ const Navbar = () => {
                 About Us
               </li>
 
-              <li className="border-b-2 border-transparent hover:border-b-2  hover:text-red-600 hover:border-green-600 hover:bg-gray-100 p-2">
+              <li className="border-b-2 border-transparent hover:border-b-2  hover:border-green-600 hover:bg-gray-100 p-2  hover:text-red-600">
                 Office
               </li>
-              <li className="border-b-2 border-transparent hover:border-b-2  hover:text-red-600 hover:border-green-600 hover:bg-gray-100 p-2">
+              <li className="border-b-2 border-transparent hover:border-b-2  hover:border-green-600 hover:bg-gray-100 p-2  hover:text-red-600">
                 Projects
               </li>
-              <li className="border-b-2 border-transparent hover:border-b-2  hover:text-red-600 hover:border-green-600 hover:bg-gray-100 p-2">
+              <li className="border-b-2 border-transparent hover:border-b-2  hover:border-green-600 hover:bg-gray-100 p-2  hover:text-red-600">
                 Contact
               </li>
             </ul>

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-text {
+  background-color: #006a4e; /* Dark green from the Bangladesh flag */
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Arial", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}

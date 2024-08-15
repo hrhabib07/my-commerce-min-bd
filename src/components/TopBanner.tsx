@@ -4,7 +4,8 @@ const TopBanner = () => {
   return (
     <div
       style={{
-        backgroundImage: `url("./../../images/commerece-bd.jpg")`,
+        backgroundImage: `url("https://theincap.com/wp-content/uploads/2023/07/Bangladesh-Aims-for-72-Billion-Export-Target-Anticipates-Strong-Growth-01.jpg")`,
+        // backgroundImage: `url("./../../images/commerece-bd.jpg")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "600px", // Set the desired height
@@ -34,7 +35,7 @@ const TopBanner = () => {
                 Empowering trade, fostering economic growth, and ensuring
                 consumer protection across Bangladesh.
               </h3>
-              <button className="p-2 bg-green-600 text-white my-4 rounded hover:bg-green-800 ">
+              <button className="p-2 bg-green-700 text-white my-4 rounded hover:bg-green-900 ">
                 {" "}
                 Explore More{" "}
               </button>

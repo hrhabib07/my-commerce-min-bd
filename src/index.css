@@ -10,8 +10,5 @@
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Arial", sans-serif;
-  font-weight: 800;
-  text-align: center;
   -webkit-font-smoothing: antialiased;
 }

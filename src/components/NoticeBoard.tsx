@@ -188,7 +188,7 @@ const NoticeBoard = () => {
       <div className="flex justify-between items-center mt-4">
         <button
           onClick={handleShowMore}
-          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800"
+          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-900"
         >
           {noticesPerPage === 5 ? "Show More" : "Show Less"}
         </button>

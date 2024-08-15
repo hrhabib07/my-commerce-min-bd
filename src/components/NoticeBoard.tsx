@@ -164,10 +164,10 @@ const NoticeBoard = () => {
       <table className="min-w-full bg-white border border-gray-300">
         <thead className="bg-gray-200">
           <tr>
-            <th className="text-left px-4 py-2 border">Serial</th>
-            <th className="text-left px-4 py-2 border">Title</th>
-            <th className="text-left px-4 py-2 border">Published Date</th>
-            <th className="text-left px-4 py-2 border">Download</th>
+            <th className="text-left lg:px-4 py-2 border">Serial</th>
+            <th className="text-left lg:px-4 py-2 border">Title</th>
+            <th className="text-left lg:px-4 py-2 border">Published Date</th>
+            <th className="text-left lg:px-4 py-2 border">Download</th>
           </tr>
         </thead>
         <tbody>

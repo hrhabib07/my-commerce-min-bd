@@ -1,9 +1,9 @@
 const OurMission = () => {
   return (
     <div className="my-8">
-      <div className="flex my-12 justify-between h-96 items-center bg-gray-100">
+      <div className="flex flex-col-reverse md:flex-row my-12 justify-between h-auto md:h-96 p-4 items-center bg-gray-100">
         <div className="flex-1 flex items-center justify-center ">
-          <div className=" max-w-xl mx-auto ">
+          <div className="w-auto lg:w-[30rem] text-center">
             <h2 className="text-2xl font-bold my-2 custom-text">Our Mission</h2>
             <p className="text-lg text-gray-600">
               To drive sustainable economic growth, enhance global trade
@@ -26,9 +26,6 @@ const OurMission = () => {
             </h3>
             <p className="text-center text-gray-600">Hon'ble Chief Advisor</p>
             <p className="text-center text-gray-600">Ministry of Commerce</p>
-            <p className="text-center text-gray-600">
-              People's Republic of Bangladesh
-            </p>
           </div>
           <div className="mb-8 me-8">
             <img
@@ -41,9 +38,6 @@ const OurMission = () => {
             </h3>
             <p className="text-center text-gray-600">Secretary</p>
             <p className="text-center text-gray-600">Ministry of Commerce</p>
-            <p className="text-center text-gray-600">
-              People's Republic of Bangladesh
-            </p>
           </div>
         </div>
       </div>

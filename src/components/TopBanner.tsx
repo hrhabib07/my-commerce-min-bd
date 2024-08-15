@@ -22,9 +22,9 @@ const TopBanner = () => {
           bottom: 0,
           backgroundColor: "rgba(0, 0, 0, 0.65)", // Black layer with 50% opacity
         }}
-        className="flex items-center"
+        className="flex flex-col md:flex-row h-auto w-auto items-center"
       >
-        <div className="flex-1 max-w-[50%] m-4">
+        <div className="flex-1 max-w-full md:max-w-[50%] m-4">
           <div className="flex flex-col justify-center items-center">
             <div>
               <h2 className="text-white text-4xl">

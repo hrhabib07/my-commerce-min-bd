@@ -161,20 +161,20 @@ const NoticeBoard = () => {
   return (
     <div className=" p-4 my-8">
       <h2 className="text-2xl font-bold mb-4">Notice Board</h2>
-      <table className="min-w-full bg-white border border-gray-300">
+      <table className="min-w-full bg-white border border-gray-300 ">
         <thead className="bg-gray-200">
           <tr>
-            <th className="text-left lg:px-4 py-2 border">Serial</th>
+            <th className="text-left lg:px-4 py-2 borde">Serial</th>
             <th className="text-left lg:px-4 py-2 border">Title</th>
             <th className="text-left lg:px-4 py-2 border">Published Date</th>
             <th className="text-left lg:px-4 py-2 border">Download</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="">
           {currentNotices.map((notice) => (
             <tr key={notice.id}>
               <td className="px-4 py-2 border">{notice.id}</td>
-              <td className="px-4 py-2 border">{notice.title}</td>
+              <td className="px-4 py-2 border ">{notice.title}</td>
               <td className="px-4 py-2 border">{notice.date}</td>
               <td className="px-4 py-2 border">
                 <a href="#" className="text-green-600 hover:underline">

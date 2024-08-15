@@ -9,7 +9,7 @@ const Navbar = () => {
         <div>
           <h2 className="text-xl font-bold">
             <span className="  rounded">
-              <span className=" ml-2 custom-text">
+              <span className=" ml-2 text-green-700">
                 Commerce ministry of Bangladesh
               </span>
             </span>

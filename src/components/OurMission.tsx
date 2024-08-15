@@ -3,8 +3,8 @@ const OurMission = () => {
     <div className="my-8">
       <div className="flex flex-col-reverse md:flex-row my-12 justify-between h-auto md:h-96 p-4 items-center bg-gray-100">
         <div className="flex-1 flex items-center justify-center ">
-          <div className="w-auto lg:w-[30rem] text-center">
-            <h2 className="text-2xl font-bold my-2 custom-text">Our Mission</h2>
+          <div className="w-auto lg:w-[30rem] text-center ">
+            <h2 className="text-2xl font-bold my-2">Our Mission</h2>
             <p className="text-lg text-gray-600">
               To drive sustainable economic growth, enhance global trade
               relations, and empower the nation’s businesses to thrive in the
@@ -21,11 +21,13 @@ const OurMission = () => {
               alt="Dr. Muhammad Yunus"
               className="w-32 h-32 rounded-full mx-auto mb-4"
             />
-            <h3 className="text-lg font-bold text-center custom-text">
-              Dr. Muhammad Yunus
-            </h3>
-            <p className="text-center text-gray-600">Hon'ble Chief Advisor</p>
-            <p className="text-center text-gray-600">Ministry of Commerce</p>
+            <div className="">
+              <h3 className="text-lg font-bold text-center ">
+                Dr. Muhammad Yunus
+              </h3>
+              <p className="text-center text-gray-600">Hon'ble Chief Advisor</p>
+              <p className="text-center text-gray-600">Ministry of Commerce</p>
+            </div>
           </div>
           <div className="mb-8 me-8">
             <img
@@ -33,11 +35,13 @@ const OurMission = () => {
               alt="Mohang Selim Uddin"
               className="w-32 h-32 rounded-full mx-auto mb-4"
             />
-            <h3 className="text-lg font-bold text-center custom-text">
-              Mohang Selim Uddin
-            </h3>
-            <p className="text-center text-gray-600">Secretary</p>
-            <p className="text-center text-gray-600">Ministry of Commerce</p>
+            <div className="">
+              <h3 className="text-lg font-bold text-center ">
+                Mohang Selim Uddin
+              </h3>
+              <p className="text-center text-gray-600">Secretary</p>
+              <p className="text-center text-gray-600">Ministry of Commerce</p>
+            </div>
           </div>
         </div>
       </div>

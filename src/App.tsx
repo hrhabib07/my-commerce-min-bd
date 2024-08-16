@@ -1,8 +1,10 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import NoticeBoard from "./components/NoticeBoard";
 import OurMission from "./components/OurMission";
 import OurServices from "./components/OurServices";
 import TopBanner from "./components/TopBanner";
+import VideoAndMap from "./components/VideoAndMap";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <NoticeBoard></NoticeBoard>
       <OurMission></OurMission>
       <OurServices></OurServices>
+      <VideoAndMap></VideoAndMap>
+      <Footer></Footer>
     </div>
   );
 };

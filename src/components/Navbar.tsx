@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  const [hoverIndex, setHoverIndex] = useState(null);
+  const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   const navItems = [
     {
@@ -187,7 +187,7 @@ const Navbar = () => {
                               {subItem.options.map((option, optIndex) => (
                                 <li
                                   key={optIndex}
-                                  className="p-1 hover:bg-gray-200"
+                                  className="p-1 hover:bg-gray-200 text-gray-600 hover:underline hover:text-green-700"
                                 >
                                   {option}
                                 </li>

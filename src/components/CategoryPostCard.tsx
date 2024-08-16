@@ -32,7 +32,7 @@ const CategoryPostCard = ({ post, index }: any) => {
               ) => (
                 <li
                   key={descIndex}
-                  className="text-gray-700 list-none cursor-pointer flex hover:underline"
+                  className="text-gray-700 list-none cursor-pointer flex hover:underline hover:text-green-700"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

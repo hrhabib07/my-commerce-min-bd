@@ -2,15 +2,109 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [hoverIndex, setHoverIndex] = useState(null);
+
+  const navItems = [
+    {
+      navItem: "About Us",
+      item: [
+        {
+          title: "About Ministry",
+          options: [
+            "Commerce Ministry History",
+            "Mission and Vision",
+            "Secretary list",
+            "Members of the Standing Committee",
+            "Organogram",
+            "Allocation of Business",
+            "Success and achievement",
+          ],
+        },
+        {
+          title: "Employee",
+          options: [
+            "Officers",
+            "Work Distribution",
+            "Information Officer",
+            "GRS Officer",
+            "Appellate Officer",
+            "Focal Point Officers",
+          ],
+        },
+        {
+          title: "Services",
+          options: [
+            "Citizen Charter",
+            "List of Citizen e-Services",
+            "Business Fair",
+          ],
+        },
+      ],
+    },
+    {
+      navItem: "Office",
+      item: [
+        {
+          title: "Attached Department",
+          options: [
+            "Bangladesh Trade and Tariff Commission",
+            "Export Promotion Bureau",
+            "Trading Corporation of Bangladesh",
+            "Directorate Of National Consumer Rights Protection",
+            "Office of the Registrar of Joint Stock Companies and Firms",
+            "Office of Chief Controller of Imports and Exports (CCI&E)",
+          ],
+        },
+        {
+          title: "More Department",
+          options: [
+            "Bangladesh Tea Board",
+            "Bangladesh Competition commission",
+            "Bangladesh Foreign Trade Institute",
+            "Business Promotion Council",
+            "The Institute of Cost and Management Accountants of Bangladesh",
+            "The Institute of Chartered Accountants of Bangladesh",
+            "Institute of Chartered Secretaries of Bangladesh",
+          ],
+        },
+      ],
+    },
+    {
+      navItem: "Projects",
+      item: [
+        {
+          title: "Running",
+          options: ["Running Project"],
+        },
+        {
+          title: "Completed",
+          options: ["Completed Project"],
+        },
+      ],
+    },
+    {
+      navItem: "Contact",
+      item: [
+        {
+          title: "Contact",
+          options: ["Office Address"],
+        },
+        {
+          title: "Comments",
+          options: ["Your Question and Comments"],
+        },
+      ],
+    },
+  ];
 
   return (
     <>
-      <div className="flex justify-between my-4">
+      <div className="flex md:flex-row-reverse justify-between my-4">
         <div>
           <h2 className="text-xl font-bold">
-            <span className="  rounded">
-              <span className=" ml-2 text-green-700">
-                Commerce ministry of Bangladesh
+            <span className="rounded">
+              <span className="ml-2 text-green-700">
+                Commerce Ministry of Bangladesh
               </span>
             </span>
           </h2>
@@ -36,7 +130,7 @@ const Navbar = () => {
               </button>
             )}
             {showNavbar && (
-              <div className="absolute top-0 left-[-4.5rem]  z-10">
+              <div className="absolute top-0 left-[-4.5rem] z-10">
                 <div className="">
                   <div className="flex justify-end bg-transparent mb-4">
                     <button onClick={() => setShowNavbar(!showNavbar)}>
@@ -58,31 +152,15 @@ const Navbar = () => {
                   </div>
                   <div className="bg-gray-900 text-white">
                     <ul className="flex flex-col justify-start">
-                      <li
-                        onClick={() => setShowNavbar(!showNavbar)}
-                        className="p-2"
-                      >
-                        About
-                      </li>
-
-                      <li
-                        onClick={() => setShowNavbar(!showNavbar)}
-                        className="p-2"
-                      >
-                        Office
-                      </li>
-                      <li
-                        onClick={() => setShowNavbar(!showNavbar)}
-                        className="p-2"
-                      >
-                        Projects
-                      </li>
-                      <li
-                        onClick={() => setShowNavbar(!showNavbar)}
-                        className="p-2"
-                      >
-                        Contact
-                      </li>
+                      {navItems.map((navItem, index) => (
+                        <li
+                          key={index}
+                          onClick={() => setShowNavbar(!showNavbar)}
+                          className="p-2"
+                        >
+                          {navItem.navItem}
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -91,19 +169,37 @@ const Navbar = () => {
           </div>
           <nav className="">
             <ul className="hidden md:flex gap-4 items-center">
-              <li className="border-b-2 text-green-700 cursor-pointer border-transparent hover:border-b-2 hover:border-green-600 hover:bg-gray-100 hover:text-red-600 p-2 ">
-                About Us
-              </li>
-
-              <li className="border-b-2 text-green-700 cursor-pointer border-transparent hover:border-b-2  hover:border-green-600 hover:bg-gray-100 p-2  hover:text-red-600">
-                Office
-              </li>
-              <li className="border-b-2 text-green-700 cursor-pointer border-transparent hover:border-b-2  hover:border-green-600 hover:bg-gray-100 p-2  hover:text-red-600">
-                Projects
-              </li>
-              <li className="border-b-2 text-green-700 cursor-pointer border-transparent hover:border-b-2  hover:border-green-600 hover:bg-gray-100 p-2  hover:text-red-600">
-                Contact
-              </li>
+              {navItems.map((navItem, index) => (
+                <li
+                  key={index}
+                  className="relative border-b-2 text-green-700 cursor-pointer border-transparent hover:border-b-2 hover:border-red-600 hover:bg-gray-100 p-2"
+                  onMouseEnter={() => setHoverIndex(index)}
+                  onMouseLeave={() => setHoverIndex(null)}
+                >
+                  {navItem.navItem}
+                  {hoverIndex === index && (
+                    <div className="w-96 absolute top-full left-0 bg-white shadow-md mt-2 z-10 grid grid-cols-2 p-4">
+                      {navItem.item.map((subItem, subIndex) => (
+                        <div key={subIndex} className="">
+                          <div className="">
+                            <h3 className="font-semibold">{subItem.title}</h3>
+                            <ul>
+                              {subItem.options.map((option, optIndex) => (
+                                <li
+                                  key={optIndex}
+                                  className="p-1 hover:bg-gray-200"
+                                >
+                                  {option}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </li>
+              ))}
             </ul>
           </nav>
         </div>

@@ -160,7 +160,7 @@ const NoticeBoard = () => {
 
   return (
     <div className=" p-4 my-8">
-      <h2 className="text-2xl font-bold mb-4">Notice Board</h2>
+      <h2 className="text-2xl font-bold mb-4 text-green-700">Notice Board</h2>
       <table className="min-w-full bg-white border border-gray-300 ">
         <thead className="bg-gray-200">
           <tr>

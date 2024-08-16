@@ -4,7 +4,9 @@ const OurMission = () => {
       <div className="flex flex-col-reverse md:flex-row my-12 justify-between h-auto md:h-96 p-4 items-center bg-gray-100">
         <div className="flex-1 flex items-center justify-center ">
           <div className="w-auto lg:w-[30rem] text-center ">
-            <h2 className="text-2xl font-bold my-2">Our Mission</h2>
+            <h2 className="text-2xl font-bold my-8 text-green-700">
+              Our Mission
+            </h2>
             <p className="text-lg text-gray-600">
               To drive sustainable economic growth, enhance global trade
               relations, and empower the nation’s businesses to thrive in the

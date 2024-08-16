@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import NoticeBoard from "./components/NoticeBoard";
 import OurMission from "./components/OurMission";
+import OurServices from "./components/OurServices";
 import TopBanner from "./components/TopBanner";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <TopBanner></TopBanner>
       <NoticeBoard></NoticeBoard>
       <OurMission></OurMission>
+      <OurServices></OurServices>
     </div>
   );
 };

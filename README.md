@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+# Commerce Ministry of Bangladesh Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a redesigned landing page for the Commerce Ministry of Bangladesh, built with TypeScript, React, and Tailwind CSS. The focus of this project is on creating a visually appealing and responsive user interface, although no functionality has been implemented at this stage.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **TypeScript:** Ensures a strongly typed codebase for better reliability and maintainability.
+- **React:** Provides a component-based architecture for modular and reusable UI components.
+- **Tailwind CSS:** Utilizes a utility-first CSS framework for efficient and rapid UI development.
 
-## Expanding the ESLint configuration
+## Date of Completion
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Completed on August 17th, 2024
 
-- Configure the top-level `parserOptions` property like this:
+## Project Overview
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+This project is purely focused on the frontend design, aiming to deliver a modern and clean look for the Commerce Ministry's landing page. While no interactive features or backend functionality have been included, the page is structured to allow for easy expansion in the future.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Date of Completion
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Completed on August 17th, 2024
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Live Site
+
+Check out the live version of the project [here](https://bd-commerece-min.vercel.app/).

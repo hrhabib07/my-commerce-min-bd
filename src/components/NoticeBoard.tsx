@@ -167,8 +167,10 @@ const NoticeBoard = () => {
             Notice Board
           </h2>
         </div>{" "}
-        <div className="flex items-center gap-2">
-          <h2 className="custom-text">National anthem </h2>
+        <div className="flex flex-col-reverse my-4 lg:my-2 md:flex-row items-center gap-4">
+          <h2 className="text-green-700 text-xl font-semibold">
+            National anthem{" "}
+          </h2>
           <audio controls>
             <source src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Amar_Sonar_Bangla_-_official_vocal_music_of_the_National_anthem_of_Bangladesh.ogg" />
           </audio>
